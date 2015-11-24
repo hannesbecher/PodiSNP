@@ -1,2 +1,2 @@
 # PodiSNP
-workflow an scripts used to detect SNPs in Podisma
+workflow and scripts used to detect SNPs in Podisma

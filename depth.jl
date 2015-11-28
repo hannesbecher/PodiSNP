@@ -2,9 +2,9 @@
 
 
 # This was written to merge the output of `samtools depth`. I had executed
-# samtools depth on six BAM files each the result of mapping a samples reads
-# to a common reference (as when comparing sample-specific trinscription
-# and transcription level). Curently is goes through six files at the same time,
+# samtools depth on six BAM files, each the result of mapping a sample's reads
+# to a common reference (as when comparing sample-specific transcription
+# or transcription levels). Currently it goes through six files at the same time,
 # averaging coverage per transcript and saving the results to another file.
 
 
@@ -23,7 +23,7 @@ in90 = open("90_depth", "r")
 
 # One Float64 and one Int array for every file. Avgs are to contain the average
 # coverage per transcript. tempcov collects per-base coverages (for one
-# transcript at a time) that will be averaged once the whole transcript has been
+# transcript at a time) that will be averaged once a whole transcript has been
 # parsed.
 
 avgs85 = Float64[]
